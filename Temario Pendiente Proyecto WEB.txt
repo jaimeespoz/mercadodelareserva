@@ -1,0 +1,13 @@
+Temario Pendiente Proyecto WEB
+------------------------------
+
+1.- Control de Acceso  (correo electrónico y password)
+2.- Registro de Nuevos Usuarios
+3.- Formulario de Contacto  (NO Mail - Con registro en db para revisión posterior)
+4.- Registro de Problemas Tecnicos (usuarios pueden crear Ticket de Problemas y Revisar grado de solución)
+5.- Desarrollo de Modulo de Noticias, de Novedades, de Misión, de Objetivos, …..
+6.- Crear Perfil de Usuario
+7.- Definir Funcionalidades de Usuarios (ej. completar datos etarios)
+
+
+ 
