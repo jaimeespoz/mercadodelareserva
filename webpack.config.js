@@ -86,14 +86,6 @@ module.exports = {
                 use: babelConfig,
             },
 
-            // {
-            //     test: /.(svg|eot|woff|woff2|ttf)$/i,
-            //     loader: 'file-loader',
-            //     options: {
-            //         outputPath: 'fonts',
-            //     },
-            // },
-
             {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
@@ -110,7 +102,7 @@ module.exports = {
                             },
                         },
                     },
-                    // { loader: 'sass-loader' },
+                    { loader: 'sass-loader' },
                 ],
             },
 

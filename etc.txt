@@ -1,3 +1,4 @@
     npx kill-port 3000
+    npx update-browserslist-db@latest
 
     npm init @eslint/config@latest

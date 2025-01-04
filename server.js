@@ -56,6 +56,7 @@ app.use(
 app.use('/src', express.static(path.join(__dirname, 'src')));
 // app.use(express.static(path.join(__dirname, 'src/shared')));
 app.use('/icons', express.static(path.join(__dirname, 'src/assets/icons')));
+app.use('/fonts', express.static(path.join(__dirname, 'src/assets/fonts')));
 app.use('/images', express.static(path.join(__dirname, 'src/assets/images')));
 
 app.use((req, res, next) => {

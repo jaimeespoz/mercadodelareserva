@@ -1,30 +1,47 @@
-import './index.css';
+'use strict';
 
-import { enConstruccionModal } from './enconstruccion/index';
+import './globalstyles.css';
 
-const d = document;
+import { Tooltip } from './util/Tooltip';
+// import { addEventOnElement, addEventOnElements } from './util/util';
+import { homeModal } from './shared/home/home';
+import { navBarHomeModal } from './shared/navbar-home';
 
-export default function ppal() {
-    let menuToggle = d.querySelector('.toggle');
-    let navigation = d.querySelector('.navigation');
-    menuToggle.onclick = function () {
-        menuToggle.classList.toggle('active');
-        navigation.classList.toggle('active');
-    };
+import '/src/util/theme.js';
 
-    let list = d.querySelectorAll('.list');
-    for (let i = 0; i < list.length; i++) {
-        list[i].onclick = function () {
-            let j = 0;
-            while (j < list.length) {
-                list[j++].className = 'list';
-            }
-            list[i].className = 'list active';
-        };
-    }
-}
+const body = document.body;
+body.innerHTML = '';
+body.appendChild(homeModal);
+body.appendChild(navBarHomeModal);
 
-ppal();
+/**
+ * Initialize tooltip behavior for all DOM elements with 'data-tooltip' attribute
+ */
+const /* {Array<HTMLElement>} */ $tooltipElems =
+        document.querySelectorAll('[data-tooltip]');
+$tooltipElems.forEach(($elem) => Tooltip($elem));
 
-const /** {Object} */ modal = enConstruccionModal();
-modal.open();
+/** Navbar */
+
+// const /** {<HTMLElement} */ $inicioBtn =
+//         document.querySelector('[data-inicio-btn]');
+
+// const /** {<HTMLElement} */ $contactoBtn = document.querySelector(
+//         '[data-contacto-btn]'
+//     );
+// const /** {<HTMLElement} */ $loginBtn =
+//         document.querySelector('[data-login-btn]');
+
+/** Footer */
+
+// const /** {Array<HTMLElement>} */ $dataopcion =
+//         document.querySelectorAll('[data-opcion-xx]');
+
+// addEventOnElements($dataopcion, 'click', function () {
+//     import('/src/shared/enconstruccion/index.js').then(
+//         ({ enConstruccionModal }) => {
+//             const /** {Object} */ modal = enConstruccionModal();
+//             modal.open();
+//         }
+//     );
+// });
