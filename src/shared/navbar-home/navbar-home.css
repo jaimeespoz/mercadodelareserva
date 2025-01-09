@@ -18,6 +18,10 @@
     color: red;
     font-size: 7.6rem;
     line-height: 110%;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 18px 30px;
 }
 
 .home-menu {
@@ -35,12 +39,20 @@
     margin: 0 auto;
 }
 
+.home-menu-links:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 496px) {
     .home-logo {
         font-family: Germanica;
         color: red;
         font-size: 3.6rem;
         line-height: 110%;
+        background-color: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        padding: 8px;
     }
 
     .home-menu {

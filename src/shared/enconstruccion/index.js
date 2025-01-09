@@ -4,6 +4,7 @@ import './enconstruccion.css';
 import 'material-symbols';
 
 import enconstruccion from '/src/assets/images/enconstruccion.png';
+import { carrouselhomeModal } from '../carrousel-home';
 
 const /** {HTMLElement} */ $overlay = document.createElement('div');
 $overlay.classList.add('overlay', 'modal-overlay');
@@ -47,6 +48,10 @@ const enConstruccionModal = function () {
     const close = function () {
         document.body.removeChild($modal);
         document.body.removeChild($overlay);
+
+        const body = document.body;
+        body.innerHTML = '';
+        body.append(carrouselhomeModal);
     };
 
     const /** {HTMLElement} */ $modalCloseBtn = $modal.querySelector(

@@ -5,7 +5,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 420px;
-    height: 460px;
+    height: 520px;
     width: calc(100% - var(--spacing-8));
     background-color: var(--surface-container-highest);
     border-radius: var(--radius-large);
