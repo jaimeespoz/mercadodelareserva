@@ -1,7 +1,7 @@
 'use strict';
 // import '../../globalstyles.css';
 import './aviso.css';
-import 'material-symbols';
+// import 'material-symbols';
 
 import logo from '/src/assets/images/logo.png';
 

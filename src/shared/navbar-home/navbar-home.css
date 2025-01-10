@@ -15,10 +15,18 @@
 
 .home-logo {
     font-family: Germanica;
-    color: red;
+    /* font-family: Poppins; */
+    /* font-family: Roboto; */
+    /* font-family: Titillium; */
+    /* color: #378ba4; */
+    /* color: #818723; */
+    /* color: #95b038; */
+    /* color: rgba(149, 176, 56, 0.9); */
+    color: steelblue;
+    /* color: rgba(6, 114, 203, 1); */
     font-size: 7.6rem;
     line-height: 110%;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 16px;
     padding: 18px 30px;
@@ -46,13 +54,13 @@
 @media screen and (max-width: 496px) {
     .home-logo {
         font-family: Germanica;
-        color: red;
+        color: steelblue;
         font-size: 3.6rem;
         line-height: 110%;
-        background-color: rgba(255, 255, 255, 0.08);
+        background-color: rgba(255, 255, 255, 0.12);
         border: 1px solid rgba(255, 255, 255, 0.12);
         border-radius: 16px;
-        padding: 8px;
+        padding: 36px 8px;
     }
 
     .home-menu {

@@ -1,7 +1,7 @@
 'use strict';
 import '../../globalstyles.css';
 import './enconstruccion.css';
-import 'material-symbols';
+// import 'material-symbols';
 
 import enconstruccion from '/src/assets/images/enconstruccion.png';
 import { carrouselhomeModal } from '../carrousel-home';

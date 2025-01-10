@@ -2,7 +2,7 @@
 
 import '../../globalstyles.css';
 import './fotosCondominio.css';
-import 'material-symbols';
+// import 'material-symbols';
 
 import { navbarModal } from '../navbar/navbar';
 import { footerModal } from '../footer/footer';
