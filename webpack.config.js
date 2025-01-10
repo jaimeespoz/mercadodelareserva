@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const dotenv = require('dotenv').config({ path: './.env' });
 
@@ -77,6 +78,12 @@ module.exports = {
                 ? '[name].[contenthash].css'
                 : '[name].css',
         }),
+        new CopyPlugin({
+            patterns: [
+                { from: 'sitemap.xml', to: 'sitemap.xml' },
+                { from: 'robots.txt', to: 'robots.txt' },
+            ],
+        }),
     ],
 
     module: {
@@ -85,6 +92,8 @@ module.exports = {
                 test: /.(js|jsx)$/i,
                 use: babelConfig,
             },
+
+            { test: /\.xml/ },
 
             {
                 test: /\.(sa|sc|c)ss$/,
