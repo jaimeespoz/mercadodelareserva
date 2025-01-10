@@ -12,3 +12,7 @@
 
         gtag('config', 'G-FXMM2W285J');
     </script> -->
+
+
+site verification google:
+google-site-verification=r98Z0esconfM6ZsdBpeiszhJeV2ojsfKZ3n4qkTm4tI
