@@ -16,3 +16,9 @@
 
 site verification google:
 google-site-verification=r98Z0esconfM6ZsdBpeiszhJeV2ojsfKZ3n4qkTm4tI
+
+
+
+anuncios automaticos
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6109678286009728"
+     crossorigin="anonymous"></script>
